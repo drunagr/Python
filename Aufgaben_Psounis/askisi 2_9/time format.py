@@ -1,0 +1,5 @@
+hours = int(input("give the hours: "))
+minutes = int(input("give the minutes: "))
+seconds = int(input("give the seconds: "))
+message = "the time is: " + str(hours) + ":" + str(minutes) + ":" + str(seconds)
+print(message)

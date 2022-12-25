@@ -265,16 +265,16 @@ def main():
 
     # Prepare Sound Effects
 
-    laser = PrepareSound("shoot.wav")
-    explosion = PrepareSound("invaderkilled.wav")
-    destroyed = PrepareSound("explosion.wav")
+    laser = PrepareSound("sounds\\laser_3.wav")
+    explosion = PrepareSound("sounds\\shoot.wav")
+    destroyed = PrepareSound("sounds\\explosion.wav")
 
     # Initialize the background and spaceship objects
 
     spaceship_low = (0,0)
     spaceship_high = (screenwidth, screenheight)
-    StarField = SpaceBackground(screenheight, "stars.jpg")
-    shipimages = ('spaceship2.png', 'spaceship3.png')
+    StarField = SpaceBackground(screenheight, "graphics\\night-sky.jpg")
+    shipimages = ('graphics\\my_ship_1.png', 'graphics\\my_ship_2.png')
     SpaceShip = SpaceCraft(shipimages,spaceship_pos, spaceship_low, spaceship_high,laser)
 
     # Initialize fire lists (ours and aliens)
@@ -296,15 +296,15 @@ def main():
 
     # Start the background music
 
-    PlayMusic("spaceinvaders.ogg")
+    PlayMusic("sounds\\spaceinvaders.ogg")
 
     # Images used for the aliens
 
-    alienimage=('alien1.png','alien2.png','alien3.png','alien4.png','alien5.png')
+    alienimage=('graphics\\alien10.png','graphics\\alien2.png','graphics\\alien3.png','graphics\\alien4.png','graphics\\alien11.png','graphics\\alien6.png','graphics\\alien7.png','graphics\\alien8.png','graphics\\alien9.png')
 
     # Number of aliens per 'wave'
 
-    numofaliens = 8
+    numofaliens = 6
     AlienShips = []
 
     # Initialize the clock object and set framerate

@@ -1,5 +1,5 @@
 # Constants for the game
-WIDTH = 900
+WIDTH = 700
 HEIGHT = 600
 FPS = 60
 

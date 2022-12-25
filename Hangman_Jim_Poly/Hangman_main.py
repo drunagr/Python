@@ -74,7 +74,7 @@ class Game:
 
     def draw(self):
         # Draw the current hangman image
-        screen.blit(hangman_images[self.hangman_index], (100, 100))
+        screen.blit(hangman_images[self.hangman_index], (50, 100))
         
         # Draw the word
         word_text = " ".join(self.word_guessed)
@@ -98,13 +98,13 @@ class Game:
         score_text = f"Lifes: {self.lifes}"
         font = pygame.font.Font(FONT, SIZE)
         text = font.render(score_text, True, BLACK)
-        screen.blit(text, (300, 10))
+        screen.blit(text, (300, 90))
 
         # Draw the high score
         high_score_text = f"High Scorer: {self.high_name} Points: {self.high_score}  "
         font = pygame.font.Font(FONT, SIZE)
         text = font.render(high_score_text, True, BLACK)
-        screen.blit(text, (300, 100))
+        screen.blit(text, (300, 10))
 
     def show_game_over_screen(self):
         font = pygame.font.Font(FONT, SIZE)

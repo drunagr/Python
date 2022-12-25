@@ -1,8 +1,8 @@
 ###################################################
-#             def user_input()     with Pygame                                  #
-#         At a Black Screen it will ask for User Input.                     #
-#        Input will show up as typing.                                             #
-#        Input will saved to Var: word and be returned.                  #
+#             def user_input() with Pygame        #
+#   At a Black Screen it will ask for User Input. #
+#   Input will show up as typing.                 #
+#   Input will saved to Var: name and be returned.#
 ###################################################
 
 import pygame
